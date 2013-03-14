@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+	<body>
+		<center>
+		<H1>Welcome</H1>
+		<P/>
+		<H3>To Tutorial Demo</H3>
+		</center>
+	</body>
+</html>
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Welcome to Tutorial Demo</title>
+</head>
+<body>
+
+    <div id="fb-root"></div>
+    
+<fb:login-button autologoutlink="true">
+</fb:login-button>
+    
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '137854833041011',
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    function updateButton(response) {
+                 if(response.status == 'connected'){
+                	var signedRequest = response.authResponse.signedRequest;
+                    console.log('Connected, Eclipse test');
+                    FB.api('/me', function(response) {
+                        console.log('Good to see you, ' + response.name + '.');
+                    });
+                    console.log(signedRequest);  
+                    //This log can be seen through the firebug extention in console tab 
+                 }
+                 else{
+                     alert('Not Connected');
+                 }
+
+                }
+
+                // run once with current status and whenever the status changes
+                FB.getLoginStatus(updateButton);
+
+            };
+
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+
+  var oauth_url = 'https://www.facebook.com/dialog/oauth/';
+  oauth_url += '137854833041011';
+  oauth_url += '&redirect_uri=' + encodeURIComponent('https://apps.facebook.com/facebook_fbtd/');
+
+  window.top.location = oauth_url;
+</script>
+<script type="text/javascript" src="jCanvaScript.js"> </script>
+        <script type="text/javascript">
+        function simpleExample()
+        {
+            //initialization by canvas id
+            jc.start('canvas_1');
+            //than we can draw some object
+            //(see 'objects' in the left navigation menu)
+            jc.circle(100,100,50,'rgba(255,0,0,0.5)',1);
+            //we can create another object and use some function
+            //(see more in 'functions')
+            jc.rect(150,40,50,60,1)
+                .rotate(30,'center');
+            //and we need to redraw canvas in the end
+            jc.start('canvas_1');
+        }
+        </script>
+<center>
+<h1>Test HTML</h1>
+<p />
+<br /> <a href='myInfo.html'>Get Your Info Here</a><br />
+</center>
+
+</body>
+</html>
+-->
